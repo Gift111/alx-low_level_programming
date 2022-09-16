@@ -1,31 +1,41 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  *main - prints largest prime factor
- *of a number
+ *of the number
  *
  *Return: 0 (Success)
  */
 
 int main(void)
 {
-	long number = 612852475143
-	int inc;
+	long int n;
+	long int max;
+	long int i;
+	
+	n = 612852475143
+	max = -1;
 
-	while (inc++ < number / 2)
+	while (n % 2 == 0)
 	{
-	if (number % inc == 0)
-	{
-		number /= 2;
-		continue;
+	max = 2
+	n /= 2
 	}
 
-	for (inc = 3; inc < number /2; inc += 2)
+	for (i = 3; i <= sqrt(n); i = i + 2)
 	{
-		if (number % inc == 0)
-			number /= inc;
+		while (n % i == 0)
+		{
+			max = i;
+			n = n / i;
+		}
 	}
-	}
-	printf("%1d\n", number);
+
+		if (n > 2)
+		max = n;
+
+	printf("%1d\n", max);
+
 	return (0);
 }
