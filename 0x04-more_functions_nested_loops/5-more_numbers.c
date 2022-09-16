@@ -4,7 +4,7 @@
 /**
  * more_numbers - prints numbers from 0 to 14
  *
- * Return: returns nothing
+ * Return: returns result
  */
 
 void more_numbers(void)
@@ -15,10 +15,12 @@ void more_numbers(void)
 	{
 		for (n2 = 0; n2 <= 14; n2++)
 		{
-			if (n2 > 9)
-				putchar((n2 / 10) + '0');
-			else
-				putchar((n2 % 10) + '0');
+			if (n2 >= 10)
+			{
+				_putchar((n2 / 10) + '0');
+			}
+				_putchar((n2 % 10) + '0');
 		}
-		putchar(10);
+		_putchar('\n');
+	}
 }
