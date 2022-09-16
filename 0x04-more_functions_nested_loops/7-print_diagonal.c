@@ -22,11 +22,9 @@ void print_diagonal(int d)
 			_putchar('\\');
 			
 			if (co == (d - 1))
-			{
 				continue;
-			}
-
-			_putchar('\n');
+			else
+				_putchar('\n');
 		}
 	}
 	_putchar('\n');
