@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - program that prints numbers or fizz or buzz
- * or fizzbuzz based on scenario
+ * main - program that prints numbers or Fizz or Buzz
+ * or FizzBuzz based on scenario
  *
- * Return: result
+ * Return: 0
  */
 
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 	{
 		if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		}
 		else if ((num % 3) == 0)
 		{
@@ -34,9 +34,10 @@ int main(void)
 		}
 		else
 		{
-			printf("%d Â", num);
+			printf("%d ", num);
 		}
 	}
 	printf("\n");
+
 	return (0);
 }
