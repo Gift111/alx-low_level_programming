@@ -3,10 +3,10 @@
 /**
  * cap_string - capitalize first letter of each word
  * @s: string to manipulate
- * Return: string
+ * Return:pointer to changed string
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int i = 0;
 
