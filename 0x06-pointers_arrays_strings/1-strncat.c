@@ -11,6 +11,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int x, y;
+
 	x = y = 0;
 	while (*(dest + x))
 		x++;
@@ -23,4 +24,4 @@ char *_strncat(char *dest, char *src, int n)
 	if (y < n)
 		*(dest + x) = *(src + y);
 	return (dest);
-}	
+}
