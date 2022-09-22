@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcmp.c - func compares two strings
+ * _strcmp - func compares two strings
  * @s1: first string
  * @s2: second string
  * Return: zero if two strings are equal
