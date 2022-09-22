@@ -4,7 +4,7 @@
  * _strcmp.c - func compares two strings
  * @s1: first string
  * @s2: second string
- * Return: 0 if two strings are equal
+ * Return: zero if two strings are equal
  * if not print a different number
  */
 
