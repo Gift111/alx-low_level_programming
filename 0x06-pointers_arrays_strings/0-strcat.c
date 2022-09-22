@@ -1,14 +1,14 @@
 #include main.h
 
 /**
- * _strcat - fucntion
- * @dest: first parameter 
- * @src: second parameter
+ * strcat - fucntion
+ * @dest: Pointer to the string that should be concatenated 
+ * @src: string to be appended to @dest
  *
- * Return: string
+ * Return: pointer to the @dest string
  */
 
-char *_strcat(char *dest, char *src)
+char *strcat(char *dest, const char *src)
 {
 	int index = 0, dest_len = 0;
 
