@@ -1,19 +1,22 @@
 #include "main.h"
 
 /**
- * cap_string - capitalize first letter of each word
+ * string_toupper -  changes all lowercase letters of a
+ *string to uppercase
  * @s: string to manipulate
  * Return:pointer to changed string
  */
 
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-	int i = 0;
+	int index = 0;
 
-	for(i = 0; s[i] != '\0'; i++)
+	while (str[index])
 	{
-		if(s[i] >= 'a' && s[i] <= 'z')
-			s[i] = s[i] - 'a' + 'A';
+		if(str[index] >= 'a' && str[index] <= 'z')
+			str[index] = 32;
+
+		index++;
 	}
-	return (s);
+	return (str);
 }
