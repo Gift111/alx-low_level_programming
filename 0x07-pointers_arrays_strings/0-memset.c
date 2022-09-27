@@ -2,19 +2,20 @@
 
 /**
  * _memset - func to fill a block of memory
- * @s: starting address
- * @b: value
- * @n: number of bytes
- * Return: 0 (success)
+ * @s: memory area
+ * @b: constant byte to fill
+ * @n: number of bytes of memory area
+ * Return: return filled memory area
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int index;
-	unsigned char *memory = s, value = b;
+	unsigned int d;
 
-	for (index = 0; index < n; index++)
-		memory[index] = value
+	for (d = 0; d < n; d++)
+	{	
+		s[d] = b;
+	}
 	
-	return (memory);
+	return (s);
 }
