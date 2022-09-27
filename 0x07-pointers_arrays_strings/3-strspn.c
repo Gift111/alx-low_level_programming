@@ -2,25 +2,33 @@
 
 /**
  * _strspn - get length of a prefix sub string
- * @s: string to check
- * @accept: string to check against
+ * @s: source string
+ * @accept: accepted string
  *
- * Return: number of bytes of s in accept
+ * Return: number of bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigmed imt i, j;
+	unsigned int i = 0, j, t = 0;
 
-	for (i = 0; s[i]; i++)
+	while (accept[i])
 	{
-		for (j = 0; accept[j]; j++)
+		j = 0;
+
+		while (s[j] != 32)
 		{
-			if (s[i] == accept[j])
-				break;
+			if (accept[i] == s[j])
+			{
+				t++;
+			}
+
+			j++;
+
 		}
-		if (!accept[j])
-			break;
+
+		i++;
 	}
-	return (i);
+
+	return (t);
 }
