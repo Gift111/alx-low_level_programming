@@ -3,8 +3,8 @@
 /**
  * *_memcpy - copies memory area src to memory area dest
  * @dest: destination
- * @src: source
- * @n: no of bytes
+ * @src: copy from
+ * @n: copy to
  * Return: dest
  */
 
