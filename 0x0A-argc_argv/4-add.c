@@ -12,8 +12,8 @@
 int main(int argc, char *argv[])
 {
 	int a = 0, c, d;
-	for (c = 1; c < argc; c++)
 
+	for (c = 1; c < argc; c++)
 	{
 		for (d = 0; argv[c][d]; d++)
 		{
