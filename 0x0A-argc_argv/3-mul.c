@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - prints multiplication
+ * main - prints multiplication of two numbers
  * @argc: number of arguments
- * @argv: array of pointers to argumnets
+ * @argv: array of pointers to arguments
  *
  * Return: Always 0
  */
@@ -18,7 +18,7 @@ return (1);
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
-prod = num 1 + num 2;
+prod = num 1 * num 2;
 
 printf("%d\n", prod);
 return (0);
