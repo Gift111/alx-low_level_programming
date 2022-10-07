@@ -22,7 +22,7 @@ int *array_range(int min, int max)
 
 	while (min <= max)
 	{
-		a[i = min;
+		a[i] = min;
 		i++;
 		min++;
 	}
