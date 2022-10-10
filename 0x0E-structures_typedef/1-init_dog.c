@@ -1,9 +1,10 @@
+#include "main.h"
 #include <stdlib.h>
 #include "dog.h"
 
 /**
  * init_dog - initialize a variable of type struct dog
- * @d: array
+ * @d: pointer of structure
  * @name: first member
  * @age: second member
  * @owner: third member
