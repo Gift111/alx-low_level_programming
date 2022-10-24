@@ -11,11 +11,13 @@ size_t print_listint(const listint_t *h)
 {
 	size_t nodes_in_list = 0;
 
-	while (h)
+	const listint_t *pointer = h;
+
+	while (pointer != NULL)
 	{
-		nodes_in_list++;
-		printf("%d\n", h->n);
-		h = h->n;
+		printf("%d\n", pointer->n);
+		nodes_in_list += 1;
+		pointer = pointer->next;
 	}
 
 	return (nodes_in_list);
