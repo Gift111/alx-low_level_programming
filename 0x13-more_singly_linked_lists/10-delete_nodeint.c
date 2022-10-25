@@ -10,7 +10,7 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *strip *dup = *head;
+	listint_t *tmp, *dup = *head;
 	unsigned int node;
 
 	if (dup == NULL)
@@ -21,7 +21,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		*head = (*head)->next;
 		free(dup);
-
 		return (1);
 	}
 
@@ -34,8 +33,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		dup = dup->next;
 	}
 
-	strip = dup->next;
-	dup->next = strip->next;
-	free(strip);
+	tmp = dup->next;
+	dup->next = tmp->next;
+	free(tmp);
 	return (1);
 }
