@@ -22,7 +22,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	else
 		return (NULL);
 
-	if (*pointer != NULL)
+	if (pointer != NULL)
 	{
 		while (pointer->next != NULL)
 			pointer = pointer->next;
