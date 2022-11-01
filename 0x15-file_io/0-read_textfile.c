@@ -5,8 +5,7 @@
  * to the POSIX standard output.
  * @letters: number of letters printed
  * @filename: name of file
- * return: expected amount of bytes
- * otherwise return 0.
+ * Return: actual number of letters.
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
